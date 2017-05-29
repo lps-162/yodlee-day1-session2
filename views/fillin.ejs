@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Node.js Rocks</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <% include partials/nav.ejs %>
+    <h1>Fill form</h1>    
+
+    <form id="contact-form" method="POST" action="/fillin">
+        <div>
+            <label for="who">Who do you want to contact</label>
+            <input type="text" name="who"/>
+        </div>
+        <div>
+            <label for="department">Which Department?</label>
+            <input type="text" name="department"/>
+        </div>
+        <div>
+            <label for="email">Your Email</label>
+            <input type="text" name="email" />
+        </div>    
+        <input type="submit" value="submit" />
+    </form>
+</body>
+</html>

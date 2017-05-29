@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Node.js Rocks</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <% include partials/nav.ejs %>
+    <h1>Contact Page</h1>
+    <p>Contact details of us</p>
+    <%= person.name %>
+    
+    <%= person.job %>
+    <%= person.city %>
+
+    <h3>List of actors </h3>
+    <% for(let actor of actors) { %>
+        <%= actor.name %> - <%= actor.movie %>
+    <% } %>
+</body>
+</html>
